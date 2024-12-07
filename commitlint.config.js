@@ -25,15 +25,15 @@ export default {
     'subject-case': [
       2,
       'always',
-      ['sentence-case'], // Enforce sentence case for subject
+      ['lower-case'], // Enforce sentence case for subject
     ],
     'subject-empty': [2, 'never'], // Disallow empty subject
     'subject-max-length': [2, 'always', 72], // Limit subject line to 72 characters
     'header-max-length': [2, 'always', 100], // Limit full header to 100 characters
-    'body-case': [1, 'always', 'sentence-case'], // Warn if body is not in sentence case
+    'body-case': [1, 'always', 'lower-case'], // Warn if body is not in sentence case
     'body-max-line-length': [2, 'always', 100], // Limit body lines to 100 characters
     'footer-max-line-length': [2, 'always', 100], // Limit footer lines to 100 characters
-    'footer-empty': [2, 'never'], // Disallow empty footer (for issue references)
+    'footer-empty': [2, 'always'], // Disallow empty footer (for issue references)
   },
   prompt: {
     settings: {},
