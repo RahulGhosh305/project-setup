@@ -33,7 +33,7 @@ export default {
     'body-case': [1, 'always', 'lower-case'], // Warn if body is not in sentence case
     'body-max-line-length': [2, 'always', 100], // Limit body lines to 100 characters
     'footer-max-line-length': [2, 'always', 100], // Limit footer lines to 100 characters
-    'footer-empty': [2, 'never'], // Disallow empty footer (for issue references)
+    'footer-empty': [2, 'always'], // Disallow empty footer (for issue references)
   },
   prompt: {
     settings: {},
